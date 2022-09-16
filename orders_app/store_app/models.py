@@ -10,6 +10,8 @@ class Store(models.Model):
 class Product(models.Model):
     name = models.CharField(max_length=100)
     price = models.FloatField()
+    description = models.CharField(max_length=1000)
+    ref = models.CharField(max_length=100)
 
 
 class ProductsStore(models.Model):
