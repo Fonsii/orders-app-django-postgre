@@ -1,3 +1,5 @@
+{% load custom_tag %}
+
 <!DOCTYPE html>
 
 <html>
@@ -8,8 +10,16 @@
         {% include  "navbar.html" %}
 
         <div class="bg-black h-80 w-full">
-            <span class="bg-white">gg</span>
-        </div>
+            <ul class = "grid grid-cols-2 gap-4 bg-black">
+                <li class="bg-black mt-10 mx-10 text-slate-50 text-justify">
+                    {% spotlight_product_description %}
+                </li>
+                <li class="bg-black mt-10 mx-10 text-slate-50 text-justify">
+                    Imagen
+                </li>
+            </ul>
 
+        </div>
+    
     </body>
 </html>

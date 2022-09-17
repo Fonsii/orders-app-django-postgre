@@ -29,6 +29,7 @@ class Search(View):
 
         return context
 
+
     def get_results(self, query_search, type):
         if type == 'product':
                 results = Product.objects.filter(name__icontains=query_search)
