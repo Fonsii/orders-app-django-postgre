@@ -8,7 +8,7 @@
 This is a simple ordering app build in django using PostgreSQL as database
 
 <p align="center" width="100%">
-    <img width="33%" src="https://github.com/Fonsii/blog-django-mongodb/blob/main/resources/readme_utils/web_blog_main_page.png"> 
+    <img width="33%" src="https://github.com/Fonsii/orders-app-django-postgre/blob/main/resources/readme_utils/web_blog_main_page.png"> 
 </p>
 
 Clone the repository

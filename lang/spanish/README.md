@@ -7,7 +7,7 @@
 Simple app para ordernar construido con django usando PostgreSQL como manejador de base de datos
 
 <p align="center" width="100%">
-    <img width="33%" src="https://github.com/Fonsii/blog-django-mongodb/blob/main/resources/readme_utils/web_blog_main_page.png"> 
+    <img width="33%" src="https://github.com/Fonsii/orders-app-django-postgre/blob/main/resources/readme_utils/web_blog_main_page.png"> 
 </p>
 
 Clonar el repositorio
