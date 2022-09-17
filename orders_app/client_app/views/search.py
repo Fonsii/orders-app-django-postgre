@@ -14,15 +14,18 @@ class Search(View):
 
 
     def create_context(self, request):
-        results_search = self.get_results(request.GET['q'], 'product')
+        results_search = self.get_results(request.GET.get('q', ''), 'product')
         page_display = self.get_paginator_results(results_search, request.GET.get('page', 1))
 
         context = {
             'results': page_display,
-            'title': 'Search results for ' + request.GET['q'],
+            'title': 'Search',
             'search': True,
-            'last_search': request.GET['q']
         }
+
+        if 'q' in request.GET:
+            context['title'] = 'Search results for ' + request.GET['q']
+            context['last_search'] = request.GET['q']
 
         return context
 

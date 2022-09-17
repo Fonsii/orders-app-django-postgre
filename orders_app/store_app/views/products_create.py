@@ -38,6 +38,7 @@ class ProductsCreateView(View):
         context = {
             'product_form': form,
             'title': 'Add product',
+            'my_products': True
         }
 
         return context

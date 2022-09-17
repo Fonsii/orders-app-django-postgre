@@ -24,6 +24,7 @@ class ProductsListView(View):
         context = {
             'results': results,
             'title': 'My Products',
+            'my_products': True
         }
 
         return context
