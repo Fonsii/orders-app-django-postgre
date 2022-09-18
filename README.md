@@ -37,3 +37,6 @@ Or
     python manage.py runserver
 
 **This project is build in English**
+
+**Credit UX/UI Design**
+https://dribbble.com/shots/16571028-Gusto-Meal-Kits-Food-Website

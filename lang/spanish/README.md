@@ -36,3 +36,6 @@ O
     python manage.py runserver
 
 **Este proyecto esta en escrito en Inglés**
+
+**Credito diseño UX/UI**
+https://dribbble.com/shots/16571028-Gusto-Meal-Kits-Food-Website
