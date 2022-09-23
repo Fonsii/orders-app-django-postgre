@@ -1,7 +1,5 @@
-from cProfile import label
 from django.forms import ModelForm, TextInput, NumberInput
 from store_app.models import Product
-
 
 class ProductForm(ModelForm):
     class Meta:

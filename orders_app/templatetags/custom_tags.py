@@ -1,5 +1,5 @@
 from django import template
-from store_app.models import Product, ProductsStore, Store
+from store_app.models import ProductsStore
 
 register = template.Library()
 

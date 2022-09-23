@@ -1,16 +1,16 @@
 from django.views.generic import View
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from store_app.models import Product, ProductsStore
 from django.core.paginator import Paginator
 
 class Search(View):
     def get(self, request):
-        #try:
-        context = self.create_context(request)
-        return render(request, 'client_app/search.html', context)
-        # except:
-        #     print("Error in search")
-        #     return render(request, 'client_app/search.html')
+        try:
+            context = self.create_context(request)
+            return render(request, 'client_app/search.html', context)
+        except:
+            print("Error in search")
+            return redirect("index")
 
 
     def create_context(self, request):
@@ -39,7 +39,6 @@ class Search(View):
 
     
     def get_paginator_results(self, results, page_number):
-        print(page_number)
         if results is not None:
             paginator = Paginator(results, 4)
             page_display = paginator.get_page(page_number)

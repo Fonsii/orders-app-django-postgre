@@ -32,14 +32,9 @@
                 </div>
             </a>
         {% empty %}
-            <a href="#" class="flex flex-col ml-64 w-2/3 h-72 items-center bg-gray-800 border-gray-700 rounded-lg border shadow-md md:flex-row hover:bg-gray-100 hover:bg-gray-700">
-                <img class="object-cover w-full h-auto rounded-t-lg md:w-48 md:rounded-none md:rounded-l-lg" src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2574&q=80" alt="a">
-                <div class="flex flex-col justify-between p-4 leading-normal">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{result.name}}</h5>
-                    <h6 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{result.price}}</h6>
-                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{{result.description}}</p>
-                </div>
-            </a>
+            <div class="flex justify-center container mx-auto">
+                <p class="mx-auto text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-900">No products found.</p>
+            </div>
         {% endfor %}
 
         {% include "paginator.html" %}

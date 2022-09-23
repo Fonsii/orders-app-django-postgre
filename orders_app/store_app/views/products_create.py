@@ -23,10 +23,10 @@ class ProductsCreateView(View):
             form = ProductForm(request.POST)
             if form.is_valid():
                 form.save()
-            added_product = Product.objects.get(ref=form.cleaned_data['ref'], name=form.cleaned_data['name'], description=form.cleaned_data['description'])
+                added_product = Product.objects.get(ref=form.cleaned_data['ref'], name=form.cleaned_data['name'], description=form.cleaned_data['description'])
 
-            store = Store.objects.get(store=request.user)
-            ProductsStore.objects.create(store=store, product=added_product)
+                store = Store.objects.get(store=request.user)
+                ProductsStore.objects.create(store=store, product=added_product)
             return redirect('index')
         else:
             return redirect('index')
